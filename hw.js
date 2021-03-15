@@ -36,7 +36,7 @@ router.route('/people/:people_id')
         res.json(people.list[id])
     })
 
-    //http://localhost/api/bears/...
+    //http://localhost/api/people
     //อัพเดตค่า
     .put((req, res) => {
         let id = people.list.findIndex((item) => (item.id == +req.params.people_id))
